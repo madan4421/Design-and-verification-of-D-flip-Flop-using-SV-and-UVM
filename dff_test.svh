@@ -19,7 +19,7 @@ class dff_test extends uvm_test;
          `uvm_info("test","unable to get vif from tb",UVM_NONE);
       end
       uvm_config_db#(virtual dff_interface)::set(this,"environment_h.agent_h.driver_h","vif",vif);
-         uvm_config_db#(virtual dff_interface)::set(this,"environment_h.agent_h.monitor_h","vif",vif);
+      uvm_config_db#(virtual dff_interface)::set(this,"environment_h.agent_h.monitor_h","vif",vif);
     endfunction: build_phase
   
     task run_phase(uvm_phase phase);
